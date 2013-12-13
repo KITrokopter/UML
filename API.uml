@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 13 13:06:33 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 13 13:24:26 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -3738,6 +3738,12 @@
                   <UML:BehavioralFeature.parameter>
                     <UML:Parameter xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018CE'
                       name = 'return' isSpecification = 'false' kind = 'return'/>
+                    <UML:Parameter xmi.id = '127-0-0-1--fe2fc8b:142ebe9817f:-8000:0000000000000D2E'
+                      name = 'height' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000190F'
@@ -5059,7 +5065,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >launchQuadcopters()</text>
+      >launchQuadcopters(height : Integer)</text>
       <text name="Fig2.6.30"
         x="921"
         y="600"
