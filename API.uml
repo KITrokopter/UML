@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Dec 12 23:26:39 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Dec 12 23:47:33 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -3030,7 +3030,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Operation xmi.id = '127-0-0-1--4b99a20b:142e6b88f75:-8000:00000000000011AF'
-                  name = 'getAltimeterHeight' visibility = 'public' isSpecification = 'false'
+                  name = 'getAltimeterAltitude' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -5709,7 +5709,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getAltimeterHeight() : Integer</text>
+      >getAltimeterAltitude() : Integer</text>
       <text name="Fig3.6.21"
         x="1297"
         y="552"
@@ -8488,7 +8488,7 @@
     </path>
   </group>
   <group name="Fig28"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[720, 824, 331, 59]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[648, 832, 331, 59]pathVisible=false;stereotypeView=0;"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019AA"
        fill="1"
        fillcolor="white"
@@ -8500,8 +8500,8 @@
     </private>
     
     <rectangle name="Fig28.0"
-      x="720"
-      y="824"
+      x="648"
+      y="832"
       width="331"
       height="59"
       fill="0"
@@ -8516,18 +8516,18 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="720"
-              y="824" />
-      <lineto x="1040"
-              y="824" />
-      <lineto x="1050"
-              y="834" />
-      <lineto x="1050"
-              y="882" />
-      <lineto x="720"
-              y="882" />
-      <lineto x="720"
-              y="824" />
+      <moveto x="648"
+              y="832" />
+      <lineto x="968"
+              y="832" />
+      <lineto x="978"
+              y="842" />
+      <lineto x="978"
+              y="890" />
+      <lineto x="648"
+              y="890" />
+      <lineto x="648"
+              y="832" />
     </path>
     <path name="Fig28.2"
       description="org.tigris.gef.presentation.FigPoly"
@@ -8536,17 +8536,17 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1040"
-              y="824" />
-      <lineto x="1050"
-              y="834" />
-      <lineto x="1040"
-              y="834" />
-      <lineto x="1040"
-              y="824" />
+      <moveto x="968"
+              y="832" />
+      <lineto x="978"
+              y="842" />
+      <lineto x="968"
+              y="842" />
+      <lineto x="968"
+              y="832" />
     </path>
     <group name="Fig28.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[722, 826, 317, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[650, 834, 317, 0]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019AA"
          fill="0"
          fillcolor="white"
@@ -8558,8 +8558,8 @@
       </private>
       
       <rectangle name="Fig28.3.0"
-        x="722"
-        y="826"
+        x="650"
+        y="834"
         width="317"
         height="0"
         fill="0"
@@ -8569,8 +8569,8 @@
       />
     </group>
     <text name="Fig28.4"
-      x="722"
-      y="826"
+      x="650"
+      y="834"
       width="317"
       height="55"
       fill="0"
@@ -8605,7 +8605,7 @@
       strokecolor="black"
     >
       <moveto x="750"
-              y="824" />
+              y="832" />
       <lineto x="750"
               y="794" />
     </path>
@@ -8655,7 +8655,7 @@
     <path name="Fig30.2"
       description="org.tigris.gef.presentation.FigPoly"
       fill="1"
-      fillcolor="178 178 178"
+      fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
@@ -8675,6 +8675,7 @@
          fillcolor="white"
          stroke="0"
          strokecolor="black"
+         visibility="0"
     >
       <private>
       </private>
@@ -8724,7 +8725,7 @@
       destFigNode="Fig12"
     </private>
     <path name="Fig31.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
