@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Dec 12 23:47:33 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 13 12:44:09 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1774,7 +1774,7 @@
           <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
         </UML:Stereotype>
         <UML:Package xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018AA'
-          name = 'APIPackage' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          name = 'APIPackage--' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
           isAbstract = 'false'>
           <UML:ModelElement.clientDependency>
             <UML:Dependency xmi.idref = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018AB'/>
@@ -1848,9 +1848,9 @@
               </UML:GeneralizableElement.generalization>
               <UML:Classifier.feature>
                 <UML:Operation xmi.id = '127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000C0E'
-                  name = 'updateValues' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
-                  isAbstract = 'false'>
+                  name = 'updateCameraValues' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
                   <UML:ModelElement.comment>
                     <UML:Comment xmi.idref = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019A7'/>
                   </UML:ModelElement.comment>
@@ -1875,9 +1875,9 @@
               </UML:ModelElement.comment>
               <UML:Classifier.feature>
                 <UML:Operation xmi.id = '127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000BF8'
-                  name = 'updateValues' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
-                  isAbstract = 'false'>
+                  name = 'updateQuadrocopterValues' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
                     <UML:Parameter xmi.id = '127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000BF9'
                       name = 'return' isSpecification = 'false' kind = 'return'/>
@@ -2427,6 +2427,15 @@
                       name = 'APICameraListener' isSpecification = 'false' kind = 'in'/>
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
+                <UML:Operation xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D24'
+                  name = 'deleteCalibration' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D25'
+                      name = 'return' isSpecification = 'false' kind = 'return'/>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
               </UML:Classifier.feature>
             </UML:Class>
             <UML:Class xmi.id = '-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008FE'
@@ -2558,7 +2567,7 @@
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '127-0-0-1--24a8b1be:142d267687f:-8000:0000000000000BDB'
-                  name = 'getNotCalibratedCameras' visibility = 'public' isSpecification = 'false'
+                  name = 'getUncalibratedCameras' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -2918,7 +2927,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001923'
-                  name = 'speed' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  name = 'actualSpeed' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
                   changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001924'>
@@ -2933,8 +2942,8 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001926'
-                  name = 'acceleration' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  changeability = 'changeable' targetScope = 'instance'>
+                  name = 'actualAcceleration' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001927'>
                       <UML:Multiplicity.range>
@@ -2948,8 +2957,8 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001929'
-                  name = 'position' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  changeability = 'changeable' targetScope = 'instance'>
+                  name = 'actualPosition' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000192A'>
                       <UML:Multiplicity.range>
@@ -2963,8 +2972,8 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000192C'
-                  name = 'orientation' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  changeability = 'changeable' targetScope = 'instance'>
+                  name = 'actualOrientation' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000192D'>
                       <UML:Multiplicity.range>
@@ -3068,6 +3077,111 @@
                     </UML:Parameter>
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D0C'
+                  name = 'altitude' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D0D'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D0E'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D0F'
+                  name = 'gyrometerData' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D10'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D11'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000088D'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D12'
+                  name = 'magnometerData' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D13'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D14'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000088D'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D15'
+                  name = 'targetSpeed' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D16'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D17'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D18'
+                  name = 'targetAcceleration' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D19'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D1A'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D1B'
+                  name = 'targetPostion' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D1C'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D1D'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000088D'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D1E'
+                  name = 'targetOrientation' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D1F'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D20'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000088D'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
               </UML:Classifier.feature>
             </UML:Class>
             <UML:Class xmi.id = '-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008AC'
@@ -3289,7 +3403,7 @@
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018DF'
-                  name = 'getNotCalibratedCameras' visibility = 'public' isSpecification = 'false'
+                  name = 'getUncalibratedCameras' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -3328,7 +3442,7 @@
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018F3'
-                  name = 'getNotCalibratedCameraAmount' visibility = 'public' isSpecification = 'false'
+                  name = 'getUncalibratedCameraAmount' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -3770,6 +3884,28 @@
                       name = 'Boolean' isSpecification = 'false' kind = 'in'/>
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
+                <UML:Operation xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D21'
+                  name = 'moveFormation' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
+                  isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D22'
+                      name = 'return' isSpecification = 'false' kind = 'return'/>
+                    <UML:Parameter xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D23'
+                      name = 'Vector' isSpecification = 'false' kind = 'in'/>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D26'
+                  name = 'rotateFormation' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D27'
+                      name = 'return' isSpecification = 'false' kind = 'return'/>
+                    <UML:Parameter xmi.id = '127-0-0-1--77924bb6:142ebbbc082:-8000:0000000000000D28'
+                      name = 'Vector' isSpecification = 'false' kind = 'in'/>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
               </UML:Classifier.feature>
             </UML:Class>
             <UML:Dependency xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018AB'
@@ -4146,7 +4282,7 @@
     ></text>
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[368, 8, 1480, 1304]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
+       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[376, 8, 1480, 1304]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018AA"
        fill="1"
        fillcolor="white"
@@ -4157,7 +4293,7 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="368"
+      x="376"
       y="8"
       width="1480"
       height="1304"
@@ -4173,23 +4309,23 @@
       stroke="0"
       strokecolor="black"
     >
-      <moveto x="368"
+      <moveto x="376"
               y="8" />
-      <lineto x="1798"
+      <lineto x="1806"
               y="8" />
-      <lineto x="1798"
+      <lineto x="1806"
               y="31" />
-      <lineto x="1847"
+      <lineto x="1855"
               y="31" />
-      <lineto x="1847"
+      <lineto x="1855"
               y="1311" />
-      <lineto x="368"
+      <lineto x="376"
               y="1311" />
-      <lineto x="368"
+      <lineto x="376"
               y="8" />
     </path>
     <text name="Fig1.2"
-      x="368"
+      x="376"
       y="8"
       width="1431"
       height="24"
@@ -4203,9 +4339,9 @@
       bold="false"
       textsize="12"
       justification="Left"
-    >APIPackage</text>
+    >APIPackage--</text>
     <group name="Fig1.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[368, 8, 1430, 1]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[376, 8, 1430, 1]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018AA"
          fill="1"
          fillcolor="white"
@@ -4217,7 +4353,7 @@
       </private>
       
       <rectangle name="Fig1.3.0"
-        x="368"
+        x="376"
         y="8"
         width="1430"
         height="1"
@@ -4228,7 +4364,7 @@
       />
     </group>
     <text name="Fig1.4"
-      x="368"
+      x="376"
       y="31"
       width="1480"
       height="1281"
@@ -4245,7 +4381,7 @@
     ></text>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[912, 40, 331, 776]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[920, 40, 331, 808]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000086B"
        fill="1"
        fillcolor="white"
@@ -4257,17 +4393,17 @@
     </private>
     
     <rectangle name="Fig2.0"
-      x="912"
+      x="920"
       y="40"
       width="331"
-      height="776"
+      height="808"
       fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     />
     <text name="Fig2.1"
-      x="913"
+      x="921"
       y="41"
       width="329"
       height="22"
@@ -4283,7 +4419,7 @@
       justification="Center"
     >API</text>
     <group name="Fig2.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[913, 41, 329, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[921, 41, 329, 0]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000086B"
          fill="0"
          fillcolor="white"
@@ -4295,7 +4431,7 @@
       </private>
       
       <rectangle name="Fig2.2.0"
-        x="913"
+        x="921"
         y="41"
         width="329"
         height="0"
@@ -4306,7 +4442,7 @@
       />
     </group>
     <rectangle name="Fig2.3"
-      x="912"
+      x="920"
       y="63"
       width="331"
       height="1"
@@ -4316,7 +4452,7 @@
       strokecolor="black"
     />
     <group name="Fig2.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[913, 64, 329, 72]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[921, 64, 329, 72]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000086B"
          fill="0"
          fillcolor="white"
@@ -4327,7 +4463,7 @@
       </private>
       
       <rectangle name="Fig2.4.0"
-        x="913"
+        x="921"
         y="64"
         width="329"
         height="72"
@@ -4337,7 +4473,7 @@
         strokecolor="black"
       />
       <text name="Fig2.4.1"
-        x="913"
+        x="921"
         y="64"
         width="329"
         height="16"
@@ -4353,7 +4489,7 @@
         justification="Left"
       >cameraSystem : APICameraSystem</text>
       <text name="Fig2.4.2"
-        x="913"
+        x="921"
         y="80"
         width="329"
         height="16"
@@ -4369,7 +4505,7 @@
         justification="Left"
       >quadcopters : APIQuadcopter*</text>
       <text name="Fig2.4.3"
-        x="913"
+        x="921"
         y="96"
         width="329"
         height="16"
@@ -4385,7 +4521,7 @@
         justification="Left"
       >quadcopterCount : Integer</text>
       <text name="Fig2.4.4"
-        x="913"
+        x="921"
         y="112"
         width="329"
         height="22"
@@ -4402,7 +4538,7 @@
       >quadcopterListeners : APIQuadcopterListener*</text>
     </group>
     <rectangle name="Fig2.5"
-      x="912"
+      x="920"
       y="135"
       width="331"
       height="1"
@@ -4412,7 +4548,7 @@
       strokecolor="black"
     />
     <group name="Fig2.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[913, 136, 329, 680]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[921, 136, 329, 712]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:000000000000086B"
          fill="0"
          fillcolor="white"
@@ -4423,17 +4559,17 @@
       </private>
       
       <rectangle name="Fig2.6.0"
-        x="913"
+        x="921"
         y="136"
         width="329"
-        height="680"
+        height="712"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
       <text name="Fig2.6.1"
-        x="913"
+        x="921"
         y="136"
         width="329"
         height="16"
@@ -4449,7 +4585,7 @@
         justification="Left"
       >&lt;&lt;constructor&gt;&gt; API()</text>
       <text name="Fig2.6.2"
-        x="913"
+        x="921"
         y="152"
         width="329"
         height="16"
@@ -4465,7 +4601,7 @@
         justification="Left"
       >getQuadcopter(id : Integer) : APIQuadrocopter</text>
       <text name="Fig2.6.3"
-        x="913"
+        x="921"
         y="168"
         width="329"
         height="16"
@@ -4481,7 +4617,7 @@
         justification="Left"
       >removeQuadcopter(id : Integer)</text>
       <text name="Fig2.6.4"
-        x="913"
+        x="921"
         y="184"
         width="329"
         height="16"
@@ -4497,7 +4633,7 @@
         justification="Left"
       >setFormation(formation : APIFormation)</text>
       <text name="Fig2.6.5"
-        x="913"
+        x="921"
         y="200"
         width="329"
         height="16"
@@ -4513,7 +4649,7 @@
         justification="Left"
       >getFormation() : APIFormation</text>
       <text name="Fig2.6.6"
-        x="913"
+        x="921"
         y="216"
         width="329"
         height="16"
@@ -4529,7 +4665,7 @@
         justification="Left"
       >getCameraSystem() : APICameraSystem</text>
       <text name="Fig2.6.7"
-        x="913"
+        x="921"
         y="232"
         width="329"
         height="16"
@@ -4545,7 +4681,7 @@
         justification="Left"
       >getCameras() : APICamera[]</text>
       <text name="Fig2.6.8"
-        x="913"
+        x="921"
         y="248"
         width="329"
         height="16"
@@ -4561,7 +4697,7 @@
         justification="Left"
       >getCalibratedCameras() : APICamera[]</text>
       <text name="Fig2.6.9"
-        x="913"
+        x="921"
         y="264"
         width="329"
         height="16"
@@ -4575,9 +4711,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getNotCalibratedCameras() : APICamera[]</text>
+      >getUncalibratedCameras() : APICamera[]</text>
       <text name="Fig2.6.10"
-        x="913"
+        x="921"
         y="280"
         width="329"
         height="16"
@@ -4593,7 +4729,7 @@
         justification="Left"
       >getCameraAmount() : Integer</text>
       <text name="Fig2.6.11"
-        x="913"
+        x="921"
         y="296"
         width="329"
         height="16"
@@ -4609,7 +4745,7 @@
         justification="Left"
       >getCalibratedCameraAmout() : Integer</text>
       <text name="Fig2.6.12"
-        x="913"
+        x="921"
         y="312"
         width="329"
         height="16"
@@ -4623,9 +4759,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getNotCalibratedCameraAmount() : Integer</text>
+      >getUncalibratedCameraAmount() : Integer</text>
       <text name="Fig2.6.13"
-        x="913"
+        x="921"
         y="328"
         width="329"
         height="16"
@@ -4641,7 +4777,7 @@
         justification="Left"
       >getQuadcopters() : APIQuadcopter[]</text>
       <text name="Fig2.6.14"
-        x="913"
+        x="921"
         y="344"
         width="329"
         height="16"
@@ -4657,7 +4793,7 @@
         justification="Left"
       >getQuadcoptersFlying() : APIQuadcopter[]</text>
       <text name="Fig2.6.15"
-        x="913"
+        x="921"
         y="360"
         width="329"
         height="16"
@@ -4673,7 +4809,7 @@
         justification="Left"
       >getQuadcoptersOnGround() : APIQuadcopter[]</text>
       <text name="Fig2.6.16"
-        x="913"
+        x="921"
         y="376"
         width="329"
         height="16"
@@ -4689,7 +4825,7 @@
         justification="Left"
       >getQuadcoptersTracked() : APIQuadcopter[]</text>
       <text name="Fig2.6.17"
-        x="913"
+        x="921"
         y="392"
         width="329"
         height="16"
@@ -4705,7 +4841,7 @@
         justification="Left"
       >getQuadcoptersUntracked() : APIQuadcopter[]</text>
       <text name="Fig2.6.18"
-        x="913"
+        x="921"
         y="408"
         width="329"
         height="16"
@@ -4721,7 +4857,7 @@
         justification="Left"
       >getQuadcoptersInFormation() : APIQuadcopter[]</text>
       <text name="Fig2.6.19"
-        x="913"
+        x="921"
         y="424"
         width="329"
         height="16"
@@ -4737,7 +4873,7 @@
         justification="Left"
       >getQuadcoptersNotInFormation() : APIQuadcopter[]</text>
       <text name="Fig2.6.20"
-        x="913"
+        x="921"
         y="440"
         width="329"
         height="16"
@@ -4753,7 +4889,7 @@
         justification="Left"
       >getQuadcopterAmount() : Integer</text>
       <text name="Fig2.6.21"
-        x="913"
+        x="921"
         y="456"
         width="329"
         height="16"
@@ -4769,7 +4905,7 @@
         justification="Left"
       >getQuadcoptersFlyingAmount() : Integer</text>
       <text name="Fig2.6.22"
-        x="913"
+        x="921"
         y="472"
         width="329"
         height="16"
@@ -4785,7 +4921,7 @@
         justification="Left"
       >getQuadcoptersOnGroundAmount() : Integer</text>
       <text name="Fig2.6.23"
-        x="913"
+        x="921"
         y="488"
         width="329"
         height="16"
@@ -4801,7 +4937,7 @@
         justification="Left"
       >getQuadcoptersTrackedAmount() : Integer</text>
       <text name="Fig2.6.24"
-        x="913"
+        x="921"
         y="504"
         width="329"
         height="16"
@@ -4817,7 +4953,7 @@
         justification="Left"
       >getQuadcoptersUntrackedAmount() : Integer</text>
       <text name="Fig2.6.25"
-        x="913"
+        x="921"
         y="520"
         width="329"
         height="16"
@@ -4833,7 +4969,7 @@
         justification="Left"
       >getQuadcoptersInFormationAmount() : Integer</text>
       <text name="Fig2.6.26"
-        x="913"
+        x="921"
         y="536"
         width="329"
         height="16"
@@ -4849,7 +4985,7 @@
         justification="Left"
       >getQuadcoptersNotInFormationAmount() : Integer</text>
       <text name="Fig2.6.27"
-        x="913"
+        x="921"
         y="552"
         width="329"
         height="16"
@@ -4865,7 +5001,7 @@
         justification="Left"
       >addMessageListener(APIMessageListener)</text>
       <text name="Fig2.6.28"
-        x="913"
+        x="921"
         y="568"
         width="329"
         height="16"
@@ -4881,7 +5017,7 @@
         justification="Left"
       >removeMessageListener(APIMessageListener)</text>
       <text name="Fig2.6.29"
-        x="913"
+        x="921"
         y="584"
         width="329"
         height="16"
@@ -4897,7 +5033,7 @@
         justification="Left"
       >launchQuadcopters()</text>
       <text name="Fig2.6.30"
-        x="913"
+        x="921"
         y="600"
         width="329"
         height="16"
@@ -4913,7 +5049,7 @@
         justification="Left"
       >getLaunchProgress() : Double</text>
       <text name="Fig2.6.31"
-        x="913"
+        x="921"
         y="616"
         width="329"
         height="16"
@@ -4929,7 +5065,7 @@
         justification="Left"
       >quadcoptersLaunched() : Boolean</text>
       <text name="Fig2.6.32"
-        x="913"
+        x="921"
         y="632"
         width="329"
         height="16"
@@ -4945,7 +5081,7 @@
         justification="Left"
       >landQuadcopters()</text>
       <text name="Fig2.6.33"
-        x="913"
+        x="921"
         y="648"
         width="329"
         height="16"
@@ -4961,7 +5097,7 @@
         justification="Left"
       >shutdownSystem()</text>
       <text name="Fig2.6.34"
-        x="913"
+        x="921"
         y="664"
         width="329"
         height="16"
@@ -4977,7 +5113,7 @@
         justification="Left"
       >getMaximumOperatingArea() : Cuboid</text>
       <text name="Fig2.6.35"
-        x="913"
+        x="921"
         y="680"
         width="329"
         height="16"
@@ -4993,7 +5129,7 @@
         justification="Left"
       >setOperatingArea(Cuboid) : Boolean</text>
       <text name="Fig2.6.36"
-        x="913"
+        x="921"
         y="696"
         width="329"
         height="16"
@@ -5009,7 +5145,7 @@
         justification="Left"
       >getMaximumHorizontalSpeed() : Integer</text>
       <text name="Fig2.6.37"
-        x="913"
+        x="921"
         y="712"
         width="329"
         height="16"
@@ -5025,7 +5161,7 @@
         justification="Left"
       >getMaximumVerticalSpeed() : Integer</text>
       <text name="Fig2.6.38"
-        x="913"
+        x="921"
         y="728"
         width="329"
         height="16"
@@ -5041,7 +5177,7 @@
         justification="Left"
       >getMaximumHorizontalAcceleration() : Integer</text>
       <text name="Fig2.6.39"
-        x="913"
+        x="921"
         y="744"
         width="329"
         height="16"
@@ -5057,7 +5193,7 @@
         justification="Left"
       >getMaximumVerticalAcceleration() : Integer</text>
       <text name="Fig2.6.40"
-        x="913"
+        x="921"
         y="760"
         width="329"
         height="16"
@@ -5073,7 +5209,7 @@
         justification="Left"
       >setReceiveTargetMovementData(Boolean)</text>
       <text name="Fig2.6.41"
-        x="913"
+        x="921"
         y="776"
         width="329"
         height="16"
@@ -5089,8 +5225,40 @@
         justification="Left"
       >setReceiveActualMovementData(Boolean)</text>
       <text name="Fig2.6.42"
-        x="913"
+        x="921"
         y="792"
+        width="329"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >setReceiveQuadcopterState(Boolean)</text>
+      <text name="Fig2.6.43"
+        x="921"
+        y="808"
+        width="329"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >moveFormation(Vector)</text>
+      <text name="Fig2.6.44"
+        x="921"
+        y="824"
         width="329"
         height="22"
         fill="0"
@@ -5103,11 +5271,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >setReceiveQuadcopterState(Boolean)</text>
+      >rotateFormation(Vector)</text>
     </group>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1296, 40, 354, 552]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1336, 40, 354, 664]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008CC"
        fill="1"
        fillcolor="white"
@@ -5119,17 +5287,17 @@
     </private>
     
     <rectangle name="Fig3.0"
-      x="1296"
+      x="1336"
       y="40"
       width="354"
-      height="552"
+      height="664"
       fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     />
     <text name="Fig3.1"
-      x="1297"
+      x="1337"
       y="41"
       width="352"
       height="22"
@@ -5145,7 +5313,7 @@
       justification="Center"
     >APIQuadcopter</text>
     <group name="Fig3.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1297, 41, 329, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1337, 41, 329, 0]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008CC"
          fill="0"
          fillcolor="white"
@@ -5157,7 +5325,7 @@
       </private>
       
       <rectangle name="Fig3.2.0"
-        x="1297"
+        x="1337"
         y="41"
         width="329"
         height="0"
@@ -5168,7 +5336,7 @@
       />
     </group>
     <rectangle name="Fig3.3"
-      x="1296"
+      x="1336"
       y="63"
       width="354"
       height="1"
@@ -5178,7 +5346,7 @@
       strokecolor="black"
     />
     <group name="Fig3.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1297, 64, 352, 168]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1337, 64, 352, 280]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008CC"
          fill="0"
          fillcolor="white"
@@ -5189,17 +5357,17 @@
       </private>
       
       <rectangle name="Fig3.4.0"
-        x="1297"
+        x="1337"
         y="64"
         width="352"
-        height="168"
+        height="280"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
       <text name="Fig3.4.1"
-        x="1297"
+        x="1337"
         y="64"
         width="352"
         height="16"
@@ -5215,7 +5383,7 @@
         justification="Left"
       >selectedForFlight : Boolean</text>
       <text name="Fig3.4.2"
-        x="1297"
+        x="1337"
         y="80"
         width="352"
         height="16"
@@ -5231,7 +5399,7 @@
         justification="Left"
       >id : Integer</text>
       <text name="Fig3.4.3"
-        x="1297"
+        x="1337"
         y="96"
         width="352"
         height="16"
@@ -5247,7 +5415,7 @@
         justification="Left"
       >colorRange : CV_HSV*</text>
       <text name="Fig3.4.4"
-        x="1297"
+        x="1337"
         y="112"
         width="352"
         height="16"
@@ -5263,7 +5431,7 @@
         justification="Left"
       >status : Status</text>
       <text name="Fig3.4.5"
-        x="1297"
+        x="1337"
         y="128"
         width="352"
         height="16"
@@ -5277,9 +5445,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >speed : Integer</text>
+      >actualSpeed : Integer</text>
       <text name="Fig3.4.6"
-        x="1297"
+        x="1337"
         y="144"
         width="352"
         height="16"
@@ -5293,9 +5461,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >acceleration : Integer</text>
+      >actualAcceleration : Integer</text>
       <text name="Fig3.4.7"
-        x="1297"
+        x="1337"
         y="160"
         width="352"
         height="16"
@@ -5309,9 +5477,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >position : Vector</text>
+      >actualPosition : Vector</text>
       <text name="Fig3.4.8"
-        x="1297"
+        x="1337"
         y="176"
         width="352"
         height="16"
@@ -5325,9 +5493,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >orientation : Vector</text>
+      >actualOrientation : Vector</text>
       <text name="Fig3.4.9"
-        x="1297"
+        x="1337"
         y="192"
         width="352"
         height="16"
@@ -5343,8 +5511,120 @@
         justification="Left"
       >latency : Integer</text>
       <text name="Fig3.4.10"
-        x="1297"
+        x="1337"
         y="208"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >linkQuality : Integer</text>
+      <text name="Fig3.4.11"
+        x="1337"
+        y="224"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >altitude : Integer</text>
+      <text name="Fig3.4.12"
+        x="1337"
+        y="240"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >gyrometerData : Vector</text>
+      <text name="Fig3.4.13"
+        x="1337"
+        y="256"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >magnometerData : Vector</text>
+      <text name="Fig3.4.14"
+        x="1337"
+        y="272"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >targetSpeed : Integer</text>
+      <text name="Fig3.4.15"
+        x="1337"
+        y="288"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >targetAcceleration : Integer</text>
+      <text name="Fig3.4.16"
+        x="1337"
+        y="304"
+        width="352"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >targetPostion : Vector</text>
+      <text name="Fig3.4.17"
+        x="1337"
+        y="320"
         width="352"
         height="22"
         fill="0"
@@ -5357,11 +5637,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >linkQuality : Integer</text>
+      >targetOrientation : Vector</text>
     </group>
     <rectangle name="Fig3.5"
-      x="1296"
-      y="231"
+      x="1336"
+      y="343"
       width="354"
       height="1"
       fill="1"
@@ -5370,7 +5650,7 @@
       strokecolor="black"
     />
     <group name="Fig3.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1297, 232, 352, 360]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1337, 344, 352, 360]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008CC"
          fill="0"
          fillcolor="white"
@@ -5381,8 +5661,8 @@
       </private>
       
       <rectangle name="Fig3.6.0"
-        x="1297"
-        y="232"
+        x="1337"
+        y="344"
         width="352"
         height="360"
         fill="0"
@@ -5391,8 +5671,8 @@
         strokecolor="black"
       />
       <text name="Fig3.6.1"
-        x="1297"
-        y="232"
+        x="1337"
+        y="344"
         width="352"
         height="16"
         fill="0"
@@ -5407,8 +5687,8 @@
         justification="Left"
       >getId() : Integer</text>
       <text name="Fig3.6.2"
-        x="1297"
-        y="248"
+        x="1337"
+        y="360"
         width="352"
         height="16"
         fill="0"
@@ -5423,8 +5703,8 @@
         justification="Left"
       >getTargetOrientation() : Vector</text>
       <text name="Fig3.6.3"
-        x="1297"
-        y="264"
+        x="1337"
+        y="376"
         width="352"
         height="16"
         fill="0"
@@ -5439,8 +5719,8 @@
         justification="Left"
       >getTargetPosition() : Vector</text>
       <text name="Fig3.6.4"
-        x="1297"
-        y="280"
+        x="1337"
+        y="392"
         width="352"
         height="16"
         fill="0"
@@ -5455,8 +5735,8 @@
         justification="Left"
       >getTargetSpeed() : Vector</text>
       <text name="Fig3.6.5"
-        x="1297"
-        y="296"
+        x="1337"
+        y="408"
         width="352"
         height="16"
         fill="0"
@@ -5471,8 +5751,8 @@
         justification="Left"
       >getTargetAcceleration() : Vector</text>
       <text name="Fig3.6.6"
-        x="1297"
-        y="312"
+        x="1337"
+        y="424"
         width="352"
         height="16"
         fill="0"
@@ -5487,8 +5767,8 @@
         justification="Left"
       >getActualOrientation() : Vector</text>
       <text name="Fig3.6.7"
-        x="1297"
-        y="328"
+        x="1337"
+        y="440"
         width="352"
         height="16"
         fill="0"
@@ -5503,8 +5783,8 @@
         justification="Left"
       >getActualPosition() : Vector</text>
       <text name="Fig3.6.8"
-        x="1297"
-        y="344"
+        x="1337"
+        y="456"
         width="352"
         height="16"
         fill="0"
@@ -5519,8 +5799,8 @@
         justification="Left"
       >getActualSpeed() : Vector</text>
       <text name="Fig3.6.9"
-        x="1297"
-        y="360"
+        x="1337"
+        y="472"
         width="352"
         height="16"
         fill="0"
@@ -5535,8 +5815,8 @@
         justification="Left"
       >getActualAcceleration() : Vector</text>
       <text name="Fig3.6.10"
-        x="1297"
-        y="376"
+        x="1337"
+        y="488"
         width="352"
         height="16"
         fill="0"
@@ -5551,8 +5831,8 @@
         justification="Left"
       >isTracked() : Boolean</text>
       <text name="Fig3.6.11"
-        x="1297"
-        y="392"
+        x="1337"
+        y="504"
         width="352"
         height="16"
         fill="0"
@@ -5567,8 +5847,8 @@
         justification="Left"
       >getColorRange() : CV_HSV[2]</text>
       <text name="Fig3.6.12"
-        x="1297"
-        y="408"
+        x="1337"
+        y="520"
         width="352"
         height="16"
         fill="0"
@@ -5583,8 +5863,8 @@
         justification="Left"
       >getNetworkLatency() : Integer</text>
       <text name="Fig3.6.13"
-        x="1297"
-        y="424"
+        x="1337"
+        y="536"
         width="352"
         height="16"
         fill="0"
@@ -5599,8 +5879,8 @@
         justification="Left"
       >getLinkQuality() : Integer</text>
       <text name="Fig3.6.14"
-        x="1297"
-        y="440"
+        x="1337"
+        y="552"
         width="352"
         height="16"
         fill="0"
@@ -5615,8 +5895,8 @@
         justification="Left"
       >setSelectedForFlight(Boolean)</text>
       <text name="Fig3.6.15"
-        x="1297"
-        y="456"
+        x="1337"
+        y="568"
         width="352"
         height="16"
         fill="0"
@@ -5631,8 +5911,8 @@
         justification="Left"
       >setColorRange(first : CV_HSV,second : CV_HSV)</text>
       <text name="Fig3.6.16"
-        x="1297"
-        y="472"
+        x="1337"
+        y="584"
         width="352"
         height="16"
         fill="0"
@@ -5647,8 +5927,8 @@
         justification="Left"
       >setColorRange(range : CV_HSV[2])</text>
       <text name="Fig3.6.17"
-        x="1297"
-        y="488"
+        x="1337"
+        y="600"
         width="352"
         height="16"
         fill="0"
@@ -5663,8 +5943,8 @@
         justification="Left"
       >blink()</text>
       <text name="Fig3.6.18"
-        x="1297"
-        y="504"
+        x="1337"
+        y="616"
         width="352"
         height="16"
         fill="0"
@@ -5679,8 +5959,8 @@
         justification="Left"
       >addQuadcopterListener(APIQuadcopterListener)</text>
       <text name="Fig3.6.19"
-        x="1297"
-        y="520"
+        x="1337"
+        y="632"
         width="352"
         height="16"
         fill="0"
@@ -5695,8 +5975,8 @@
         justification="Left"
       >removeQuadcopterListener(APIQuadcopterListener)</text>
       <text name="Fig3.6.20"
-        x="1297"
-        y="536"
+        x="1337"
+        y="648"
         width="352"
         height="16"
         fill="0"
@@ -5711,8 +5991,8 @@
         justification="Left"
       >getAltimeterAltitude() : Integer</text>
       <text name="Fig3.6.21"
-        x="1297"
-        y="552"
+        x="1337"
+        y="664"
         width="352"
         height="16"
         fill="0"
@@ -5727,8 +6007,8 @@
         justification="Left"
       >getGyrometerData() : Vector</text>
       <text name="Fig3.6.22"
-        x="1297"
-        y="568"
+        x="1337"
+        y="680"
         width="352"
         height="22"
         fill="0"
@@ -5767,8 +6047,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
                         ownerhref="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008E4"
-                        angle="315.0"
-                        offset="5" />
+                        angle="290.0"
+                        offset="8" />
       <argouml:pathitem figname="Fig4.3"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
@@ -5795,14 +6075,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1242"
+      <moveto x="1250"
               y="423" />
-      <lineto x="1296"
+      <lineto x="1336"
               y="423" />
     </path>
   </group>
   <group name="Fig5"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[416, 48, 269, 248]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[424, 48, 269, 248]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008FE"
        fill="1"
        fillcolor="white"
@@ -5814,7 +6094,7 @@
     </private>
     
     <rectangle name="Fig5.0"
-      x="416"
+      x="424"
       y="48"
       width="269"
       height="248"
@@ -5824,7 +6104,7 @@
       strokecolor="black"
     />
     <text name="Fig5.1"
-      x="417"
+      x="425"
       y="49"
       width="267"
       height="22"
@@ -5840,7 +6120,7 @@
       justification="Center"
     >APICameraSystem</text>
     <group name="Fig5.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[417, 49, 267, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[425, 49, 267, 0]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008FE"
          fill="0"
          fillcolor="white"
@@ -5852,7 +6132,7 @@
       </private>
       
       <rectangle name="Fig5.2.0"
-        x="417"
+        x="425"
         y="49"
         width="267"
         height="0"
@@ -5863,7 +6143,7 @@
       />
     </group>
     <rectangle name="Fig5.3"
-      x="416"
+      x="424"
       y="71"
       width="269"
       height="1"
@@ -5873,7 +6153,7 @@
       strokecolor="black"
     />
     <group name="Fig5.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[417, 72, 267, 40]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[425, 72, 267, 40]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008FE"
          fill="0"
          fillcolor="white"
@@ -5884,7 +6164,7 @@
       </private>
       
       <rectangle name="Fig5.4.0"
-        x="417"
+        x="425"
         y="72"
         width="267"
         height="40"
@@ -5894,7 +6174,7 @@
         strokecolor="black"
       />
       <text name="Fig5.4.1"
-        x="417"
+        x="425"
         y="72"
         width="267"
         height="16"
@@ -5910,7 +6190,7 @@
         justification="Left"
       >cameras : APICamera*</text>
       <text name="Fig5.4.2"
-        x="417"
+        x="425"
         y="88"
         width="267"
         height="22"
@@ -5927,7 +6207,7 @@
       >cameraCount : Integer</text>
     </group>
     <rectangle name="Fig5.5"
-      x="416"
+      x="424"
       y="111"
       width="269"
       height="1"
@@ -5937,7 +6217,7 @@
       strokecolor="black"
     />
     <group name="Fig5.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[417, 112, 267, 184]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[425, 112, 267, 184]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:00000000000008FE"
          fill="0"
          fillcolor="white"
@@ -5948,7 +6228,7 @@
       </private>
       
       <rectangle name="Fig5.6.0"
-        x="417"
+        x="425"
         y="112"
         width="267"
         height="184"
@@ -5958,7 +6238,7 @@
         strokecolor="black"
       />
       <text name="Fig5.6.1"
-        x="417"
+        x="425"
         y="112"
         width="267"
         height="16"
@@ -5974,7 +6254,7 @@
         justification="Left"
       >getCamera(id : Integer) : APICamera</text>
       <text name="Fig5.6.2"
-        x="417"
+        x="425"
         y="128"
         width="267"
         height="16"
@@ -5990,7 +6270,7 @@
         justification="Left"
       >getCameraAmount() : Integer</text>
       <text name="Fig5.6.3"
-        x="417"
+        x="425"
         y="144"
         width="267"
         height="16"
@@ -6006,7 +6286,7 @@
         justification="Left"
       >getCameras() : APICamera[]</text>
       <text name="Fig5.6.4"
-        x="417"
+        x="425"
         y="160"
         width="267"
         height="16"
@@ -6022,7 +6302,7 @@
         justification="Left"
       >startCalibration()</text>
       <text name="Fig5.6.5"
-        x="417"
+        x="425"
         y="176"
         width="267"
         height="16"
@@ -6038,7 +6318,7 @@
         justification="Left"
       >takeCalibrationPicture() : Boolean</text>
       <text name="Fig5.6.6"
-        x="417"
+        x="425"
         y="192"
         width="267"
         height="16"
@@ -6054,7 +6334,7 @@
         justification="Left"
       >calculateCalibration()</text>
       <text name="Fig5.6.7"
-        x="417"
+        x="425"
         y="208"
         width="267"
         height="16"
@@ -6070,7 +6350,7 @@
         justification="Left"
       >isCalibrated() : Boolean</text>
       <text name="Fig5.6.8"
-        x="417"
+        x="425"
         y="224"
         width="267"
         height="16"
@@ -6086,7 +6366,7 @@
         justification="Left"
       >getCalibratedCameras() : APICamera[]</text>
       <text name="Fig5.6.9"
-        x="417"
+        x="425"
         y="240"
         width="267"
         height="16"
@@ -6100,9 +6380,9 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getNotCalibratedCameras() : APICamera[]</text>
+      >getUncalibratedCameras() : APICamera[]</text>
       <text name="Fig5.6.10"
-        x="417"
+        x="425"
         y="256"
         width="267"
         height="16"
@@ -6118,7 +6398,7 @@
         justification="Left"
       >getCalibrationPictures() : Mat[][]</text>
       <text name="Fig5.6.11"
-        x="417"
+        x="425"
         y="272"
         width="267"
         height="22"
@@ -6186,14 +6466,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="912"
+      <moveto x="920"
               y="136" />
-      <lineto x="684"
+      <lineto x="692"
               y="136" />
     </path>
   </group>
   <group name="Fig7"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[408, 328, 393, 328]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[416, 328, 393, 344]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-115-3-12--81--7c59ba51:142c299830c:-8000:0000000000000932"
        fill="1"
        fillcolor="white"
@@ -6205,17 +6485,17 @@
     </private>
     
     <rectangle name="Fig7.0"
-      x="408"
+      x="416"
       y="328"
       width="393"
-      height="328"
+      height="344"
       fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     />
     <text name="Fig7.1"
-      x="409"
+      x="417"
       y="329"
       width="391"
       height="22"
@@ -6231,7 +6511,7 @@
       justification="Center"
     >APICamera</text>
     <group name="Fig7.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[409, 329, 390, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[417, 329, 390, 0]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:0000000000000932"
          fill="0"
          fillcolor="white"
@@ -6243,7 +6523,7 @@
       </private>
       
       <rectangle name="Fig7.2.0"
-        x="409"
+        x="417"
         y="329"
         width="390"
         height="0"
@@ -6254,7 +6534,7 @@
       />
     </group>
     <rectangle name="Fig7.3"
-      x="408"
+      x="416"
       y="351"
       width="393"
       height="1"
@@ -6264,7 +6544,7 @@
       strokecolor="black"
     />
     <group name="Fig7.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[409, 352, 391, 72]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[417, 352, 391, 72]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:0000000000000932"
          fill="0"
          fillcolor="white"
@@ -6275,7 +6555,7 @@
       </private>
       
       <rectangle name="Fig7.4.0"
-        x="409"
+        x="417"
         y="352"
         width="391"
         height="72"
@@ -6285,7 +6565,7 @@
         strokecolor="black"
       />
       <text name="Fig7.4.1"
-        x="409"
+        x="417"
         y="352"
         width="391"
         height="16"
@@ -6301,7 +6581,7 @@
         justification="Left"
       >calibration : APICalibrationData</text>
       <text name="Fig7.4.2"
-        x="409"
+        x="417"
         y="368"
         width="391"
         height="16"
@@ -6317,7 +6597,7 @@
         justification="Left"
       >id : Integer</text>
       <text name="Fig7.4.3"
-        x="409"
+        x="417"
         y="384"
         width="391"
         height="16"
@@ -6333,7 +6613,7 @@
         justification="Left"
       >VERTICAL_DETECTION_ANGLE : Integer</text>
       <text name="Fig7.4.4"
-        x="409"
+        x="417"
         y="400"
         width="391"
         height="22"
@@ -6350,7 +6630,7 @@
       >HORIZONTAL_DETECTION_ANGLE : Integer</text>
     </group>
     <rectangle name="Fig7.5"
-      x="408"
+      x="416"
       y="423"
       width="393"
       height="1"
@@ -6360,7 +6640,7 @@
       strokecolor="black"
     />
     <group name="Fig7.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[409, 424, 391, 232]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[417, 424, 391, 248]"
          href="-115-3-12--81--7c59ba51:142c299830c:-8000:0000000000000932"
          fill="0"
          fillcolor="white"
@@ -6371,17 +6651,17 @@
       </private>
       
       <rectangle name="Fig7.6.0"
-        x="409"
+        x="417"
         y="424"
         width="391"
-        height="232"
+        height="248"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
       <text name="Fig7.6.1"
-        x="409"
+        x="417"
         y="424"
         width="391"
         height="16"
@@ -6397,7 +6677,7 @@
         justification="Left"
       >getImage() : Mat</text>
       <text name="Fig7.6.2"
-        x="409"
+        x="417"
         y="440"
         width="391"
         height="16"
@@ -6413,7 +6693,7 @@
         justification="Left"
       >startCalibration(imageAmount : Integer,waitingTime : Integer)</text>
       <text name="Fig7.6.3"
-        x="409"
+        x="417"
         y="456"
         width="391"
         height="16"
@@ -6429,7 +6709,7 @@
         justification="Left"
       >getCalibrationImageCount() : Integer</text>
       <text name="Fig7.6.4"
-        x="409"
+        x="417"
         y="472"
         width="391"
         height="16"
@@ -6445,7 +6725,7 @@
         justification="Left"
       >getAllCalibrationImages() : Mat[]</text>
       <text name="Fig7.6.5"
-        x="409"
+        x="417"
         y="488"
         width="391"
         height="16"
@@ -6461,7 +6741,7 @@
         justification="Left"
       >getCalibrationImage(number : Integer) : Mat</text>
       <text name="Fig7.6.6"
-        x="409"
+        x="417"
         y="504"
         width="391"
         height="16"
@@ -6477,7 +6757,7 @@
         justification="Left"
       >setCalibrationData(data : APICalibrationData)</text>
       <text name="Fig7.6.7"
-        x="409"
+        x="417"
         y="520"
         width="391"
         height="16"
@@ -6493,7 +6773,7 @@
         justification="Left"
       >getCalibrationData() : APICalibrationData</text>
       <text name="Fig7.6.8"
-        x="409"
+        x="417"
         y="536"
         width="391"
         height="16"
@@ -6509,7 +6789,7 @@
         justification="Left"
       >isCalibrated() : Boolean</text>
       <text name="Fig7.6.9"
-        x="409"
+        x="417"
         y="552"
         width="391"
         height="16"
@@ -6525,7 +6805,7 @@
         justification="Left"
       >getPosition() : Vector</text>
       <text name="Fig7.6.10"
-        x="409"
+        x="417"
         y="568"
         width="391"
         height="16"
@@ -6541,7 +6821,7 @@
         justification="Left"
       >getOrientation() : Vector</text>
       <text name="Fig7.6.11"
-        x="409"
+        x="417"
         y="584"
         width="391"
         height="16"
@@ -6557,7 +6837,7 @@
         justification="Left"
       >addImageListener(APIImageListener)</text>
       <text name="Fig7.6.12"
-        x="409"
+        x="417"
         y="600"
         width="391"
         height="16"
@@ -6573,7 +6853,7 @@
         justification="Left"
       >removeImageListener(APIImageListener)</text>
       <text name="Fig7.6.13"
-        x="409"
+        x="417"
         y="616"
         width="391"
         height="16"
@@ -6589,8 +6869,24 @@
         justification="Left"
       >addCameraListener(APICameraListener)</text>
       <text name="Fig7.6.14"
-        x="409"
+        x="417"
         y="632"
+        width="391"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >removeCameraListener(APICameraListener)</text>
+      <text name="Fig7.6.15"
+        x="417"
+        y="648"
         width="391"
         height="22"
         fill="0"
@@ -6603,7 +6899,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >removeCameraListener(APICameraListener)</text>
+      >deleteCalibration()</text>
     </group>
   </group>
   <group name="Fig8"
@@ -6657,14 +6953,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="584"
+      <moveto x="592"
               y="295" />
-      <lineto x="584"
+      <lineto x="592"
               y="328" />
     </path>
   </group>
   <group name="Fig9"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[392, 912, 472, 120]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[400, 1032, 472, 120]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B2F"
        fill="1"
        fillcolor="white"
@@ -6676,8 +6972,8 @@
     </private>
     
     <rectangle name="Fig9.0"
-      x="392"
-      y="912"
+      x="400"
+      y="1032"
       width="472"
       height="120"
       fill="1"
@@ -6686,8 +6982,8 @@
       strokecolor="black"
     />
     <text name="Fig9.1"
-      x="393"
-      y="913"
+      x="401"
+      y="1033"
       width="470"
       height="22"
       fill="0"
@@ -6702,7 +6998,7 @@
       justification="Center"
     >APICalibrationData</text>
     <group name="Fig9.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[393, 913, 470, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[401, 1033, 470, 0]"
          href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B2F"
          fill="0"
          fillcolor="white"
@@ -6714,8 +7010,8 @@
       </private>
       
       <rectangle name="Fig9.2.0"
-        x="393"
-        y="913"
+        x="401"
+        y="1033"
         width="470"
         height="0"
         fill="0"
@@ -6725,8 +7021,8 @@
       />
     </group>
     <rectangle name="Fig9.3"
-      x="392"
-      y="935"
+      x="400"
+      y="1055"
       width="472"
       height="1"
       fill="1"
@@ -6735,7 +7031,7 @@
       strokecolor="black"
     />
     <group name="Fig9.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[393, 936, 470, 40]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[401, 1056, 470, 40]"
          href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B2F"
          fill="0"
          fillcolor="white"
@@ -6746,8 +7042,8 @@
       </private>
       
       <rectangle name="Fig9.4.0"
-        x="393"
-        y="936"
+        x="401"
+        y="1056"
         width="470"
         height="40"
         fill="0"
@@ -6756,8 +7052,8 @@
         strokecolor="black"
       />
       <text name="Fig9.4.1"
-        x="393"
-        y="936"
+        x="401"
+        y="1056"
         width="470"
         height="16"
         fill="0"
@@ -6772,8 +7068,8 @@
         justification="Left"
       >intrinsics : Mat</text>
       <text name="Fig9.4.2"
-        x="393"
-        y="952"
+        x="401"
+        y="1072"
         width="470"
         height="22"
         fill="0"
@@ -6789,8 +7085,8 @@
       >parameters : Vector</text>
     </group>
     <rectangle name="Fig9.5"
-      x="392"
-      y="975"
+      x="400"
+      y="1095"
       width="472"
       height="1"
       fill="1"
@@ -6799,7 +7095,7 @@
       strokecolor="black"
     />
     <group name="Fig9.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[393, 976, 470, 56]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[401, 1096, 470, 56]"
          href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B2F"
          fill="0"
          fillcolor="white"
@@ -6810,8 +7106,8 @@
       </private>
       
       <rectangle name="Fig9.6.0"
-        x="393"
-        y="976"
+        x="401"
+        y="1096"
         width="470"
         height="56"
         fill="0"
@@ -6820,8 +7116,8 @@
         strokecolor="black"
       />
       <text name="Fig9.6.1"
-        x="393"
-        y="976"
+        x="401"
+        y="1096"
         width="470"
         height="16"
         fill="0"
@@ -6836,8 +7132,8 @@
         justification="Left"
       >&lt;&lt;constructor&gt;&gt; APICalibrationData(intrinsics : Mat,parameters : Vector)</text>
       <text name="Fig9.6.2"
-        x="393"
-        y="992"
+        x="401"
+        y="1112"
         width="470"
         height="16"
         fill="0"
@@ -6852,8 +7148,8 @@
         justification="Left"
       >getIntrinsics() : Mat</text>
       <text name="Fig9.6.3"
-        x="393"
-        y="1008"
+        x="401"
+        y="1128"
         width="470"
         height="22"
         fill="0"
@@ -6870,7 +7166,7 @@
     </group>
   </group>
   <group name="Fig10"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1144, 920, 633, 184]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1152, 928, 633, 184]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B3E"
        fill="1"
        fillcolor="white"
@@ -6882,8 +7178,8 @@
     </private>
     
     <rectangle name="Fig10.0"
-      x="1144"
-      y="920"
+      x="1152"
+      y="928"
       width="633"
       height="184"
       fill="1"
@@ -6892,8 +7188,8 @@
       strokecolor="black"
     />
     <text name="Fig10.1"
-      x="1145"
-      y="921"
+      x="1153"
+      y="929"
       width="631"
       height="22"
       fill="0"
@@ -6908,7 +7204,7 @@
       justification="Center"
     >APIFormation</text>
     <group name="Fig10.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1145, 921, 631, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1153, 929, 631, 0]"
          href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B3E"
          fill="0"
          fillcolor="white"
@@ -6920,8 +7216,8 @@
       </private>
       
       <rectangle name="Fig10.2.0"
-        x="1145"
-        y="921"
+        x="1153"
+        y="929"
         width="631"
         height="0"
         fill="0"
@@ -6931,8 +7227,8 @@
       />
     </group>
     <rectangle name="Fig10.3"
-      x="1144"
-      y="943"
+      x="1152"
+      y="951"
       width="633"
       height="1"
       fill="1"
@@ -6941,7 +7237,7 @@
       strokecolor="black"
     />
     <group name="Fig10.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1145, 944, 631, 56]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1153, 952, 631, 56]"
          href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B3E"
          fill="0"
          fillcolor="white"
@@ -6952,8 +7248,8 @@
       </private>
       
       <rectangle name="Fig10.4.0"
-        x="1145"
-        y="944"
+        x="1153"
+        y="952"
         width="631"
         height="56"
         fill="0"
@@ -6962,8 +7258,8 @@
         strokecolor="black"
       />
       <text name="Fig10.4.1"
-        x="1145"
-        y="944"
+        x="1153"
+        y="952"
         width="631"
         height="16"
         fill="0"
@@ -6978,8 +7274,8 @@
         justification="Left"
       >quadcopterAmount : Integer</text>
       <text name="Fig10.4.2"
-        x="1145"
-        y="960"
+        x="1153"
+        y="968"
         width="631"
         height="16"
         fill="0"
@@ -6994,8 +7290,8 @@
         justification="Left"
       >minimumDistance : Integer</text>
       <text name="Fig10.4.3"
-        x="1145"
-        y="976"
+        x="1153"
+        y="984"
         width="631"
         height="22"
         fill="0"
@@ -7011,8 +7307,8 @@
       >quadcopterPositions : Vector*</text>
     </group>
     <rectangle name="Fig10.5"
-      x="1144"
-      y="999"
+      x="1152"
+      y="1007"
       width="633"
       height="1"
       fill="1"
@@ -7021,7 +7317,7 @@
       strokecolor="black"
     />
     <group name="Fig10.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1145, 1000, 631, 104]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1153, 1008, 631, 104]"
          href="127-0-0-1--e7ff99f:142c2d7289f:-8000:0000000000000B3E"
          fill="0"
          fillcolor="white"
@@ -7032,8 +7328,8 @@
       </private>
       
       <rectangle name="Fig10.6.0"
-        x="1145"
-        y="1000"
+        x="1153"
+        y="1008"
         width="631"
         height="104"
         fill="0"
@@ -7042,8 +7338,8 @@
         strokecolor="black"
       />
       <text name="Fig10.6.1"
-        x="1145"
-        y="1000"
+        x="1153"
+        y="1008"
         width="631"
         height="16"
         fill="0"
@@ -7058,8 +7354,8 @@
         justification="Left"
       >&lt;&lt;constructor&gt;&gt; DefaultAPIFormation(quadcopterAmount : Integer,quadcopterPositions : Vector*)</text>
       <text name="Fig10.6.2"
-        x="1145"
-        y="1016"
+        x="1153"
+        y="1024"
         width="631"
         height="16"
         fill="0"
@@ -7074,8 +7370,8 @@
         justification="Left"
       >getQuadcopterAmount() : Integer</text>
       <text name="Fig10.6.3"
-        x="1145"
-        y="1032"
+        x="1153"
+        y="1040"
         width="631"
         height="16"
         fill="0"
@@ -7090,8 +7386,8 @@
         justification="Left"
       >getQuadcopterPosition(number : Integer) : Vector</text>
       <text name="Fig10.6.4"
-        x="1145"
-        y="1048"
+        x="1153"
+        y="1056"
         width="631"
         height="16"
         fill="0"
@@ -7106,8 +7402,8 @@
         justification="Left"
       >setMinimumDistance(minimumDistance : Integer)</text>
       <text name="Fig10.6.5"
-        x="1145"
-        y="1064"
+        x="1153"
+        y="1072"
         width="631"
         height="16"
         fill="0"
@@ -7122,8 +7418,8 @@
         justification="Left"
       >getQuadcopterPositions() : Vector*</text>
       <text name="Fig10.6.6"
-        x="1145"
-        y="1080"
+        x="1153"
+        y="1088"
         width="631"
         height="22"
         fill="0"
@@ -7190,14 +7486,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1211"
-              y="815" />
-      <lineto x="1211"
-              y="920" />
+      <moveto x="1219"
+              y="847" />
+      <lineto x="1219"
+              y="928" />
     </path>
   </group>
   <group name="Fig12"
-       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[1320, 664, 299, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
+       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[1328, 744, 386, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
        href="127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000BF4"
        fill="1"
        fillcolor="white"
@@ -7209,9 +7505,9 @@
     </private>
     
     <rectangle name="Fig12.0"
-      x="1320"
-      y="664"
-      width="299"
+      x="1328"
+      y="744"
+      width="386"
       height="67"
       fill="1"
       fillcolor="white"
@@ -7219,9 +7515,9 @@
       strokecolor="black"
     />
     <text name="Fig12.1"
-      x="1321"
-      y="665"
-      width="297"
+      x="1329"
+      y="745"
+      width="384"
       height="41"
       fill="0"
       fillcolor="white"
@@ -7235,7 +7531,7 @@
       justification="Center"
     >APIQuadcopterListener</text>
     <group name="Fig12.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1321, 665, 297, 19]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1329, 745, 384, 19]"
          href="127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000BF4"
          fill="0"
          fillcolor="white"
@@ -7246,9 +7542,9 @@
       </private>
       
       <rectangle name="Fig12.2.0"
-        x="1321"
-        y="665"
-        width="297"
+        x="1329"
+        y="745"
+        width="384"
         height="19"
         fill="0"
         fillcolor="white"
@@ -7256,9 +7552,9 @@
         strokecolor="black"
       />
       <text name="Fig12.2.1"
-        x="1321"
-        y="665"
-        width="297"
+        x="1329"
+        y="745"
+        width="384"
         height="17"
         fill="0"
         fillcolor="white"
@@ -7273,9 +7569,9 @@
       >&lt;&lt;interface&gt;&gt;</text>
     </group>
     <rectangle name="Fig12.3"
-      x="1320"
-      y="706"
-      width="299"
+      x="1328"
+      y="786"
+      width="386"
       height="1"
       fill="1"
       fillcolor="black"
@@ -7283,7 +7579,7 @@
       strokecolor="black"
     />
     <group name="Fig12.4"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1321, 707, 297, 24]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1329, 787, 384, 24]"
          href="127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000BF4"
          fill="0"
          fillcolor="white"
@@ -7294,9 +7590,9 @@
       </private>
       
       <rectangle name="Fig12.4.0"
-        x="1321"
-        y="707"
-        width="297"
+        x="1329"
+        y="787"
+        width="384"
         height="24"
         fill="0"
         fillcolor="white"
@@ -7304,9 +7600,9 @@
         strokecolor="black"
       />
       <text name="Fig12.4.1"
-        x="1321"
-        y="707"
-        width="297"
+        x="1329"
+        y="787"
+        width="384"
         height="22"
         fill="0"
         fillcolor="white"
@@ -7318,7 +7614,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >updateValues(e : APIQuadcopterUpdateEvent)</text>
+      >updateQuadrocopterValues(e : APIQuadcopterUpdateEvent)</text>
     </group>
   </group>
   <group name="Fig13"
@@ -7338,8 +7634,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-115-3-12--75-447502de:142e1a3761e:-8000:000000000000189E"
-                        angle="270.0"
-                        offset="25" />
+                        angle="257.0"
+                        offset="9" />
       <argouml:pathitem figname="Fig13.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -7356,8 +7652,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
                         ownerhref="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018A0"
-                        angle="231.00000000000006"
-                        offset="29" />
+                        angle="251.00000000000003"
+                        offset="28" />
       <argouml:pathitem figname="Fig13.5"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
@@ -7372,14 +7668,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1464"
-              y="591" />
-      <lineto x="1464"
-              y="664" />
+      <moveto x="1472"
+              y="703" />
+      <lineto x="1472"
+              y="744" />
     </path>
   </group>
   <group name="Fig14"
-       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[624, 728, 273, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
+       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[592, 728, 321, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
        href="127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000C0D"
        fill="1"
        fillcolor="white"
@@ -7391,9 +7687,9 @@
     </private>
     
     <rectangle name="Fig14.0"
-      x="624"
+      x="592"
       y="728"
-      width="273"
+      width="321"
       height="67"
       fill="1"
       fillcolor="white"
@@ -7401,9 +7697,9 @@
       strokecolor="black"
     />
     <text name="Fig14.1"
-      x="625"
+      x="593"
       y="729"
-      width="271"
+      width="319"
       height="41"
       fill="0"
       fillcolor="white"
@@ -7417,7 +7713,7 @@
       justification="Center"
     >APICameraListener</text>
     <group name="Fig14.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[625, 729, 271, 19]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[593, 729, 319, 19]"
          href="127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000C0D"
          fill="0"
          fillcolor="white"
@@ -7428,9 +7724,9 @@
       </private>
       
       <rectangle name="Fig14.2.0"
-        x="625"
+        x="593"
         y="729"
-        width="271"
+        width="319"
         height="19"
         fill="0"
         fillcolor="white"
@@ -7438,9 +7734,9 @@
         strokecolor="black"
       />
       <text name="Fig14.2.1"
-        x="625"
+        x="593"
         y="729"
-        width="271"
+        width="319"
         height="17"
         fill="0"
         fillcolor="white"
@@ -7455,9 +7751,9 @@
       >&lt;&lt;interface&gt;&gt;</text>
     </group>
     <rectangle name="Fig14.3"
-      x="624"
+      x="592"
       y="770"
-      width="273"
+      width="321"
       height="1"
       fill="1"
       fillcolor="black"
@@ -7465,7 +7761,7 @@
       strokecolor="black"
     />
     <group name="Fig14.4"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[625, 771, 271, 24]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[593, 771, 319, 24]"
          href="127-0-0-1-13f41b3c:142d840bbec:-8000:0000000000000C0D"
          fill="0"
          fillcolor="white"
@@ -7476,9 +7772,9 @@
       </private>
       
       <rectangle name="Fig14.4.0"
-        x="625"
+        x="593"
         y="771"
-        width="271"
+        width="319"
         height="24"
         fill="0"
         fillcolor="white"
@@ -7486,9 +7782,9 @@
         strokecolor="black"
       />
       <text name="Fig14.4.1"
-        x="625"
+        x="593"
         y="771"
-        width="271"
+        width="319"
         height="22"
         fill="0"
         fillcolor="white"
@@ -7500,11 +7796,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >updateValues(e : APICameraUpdateEvent)</text>
+      >updateCameraValues(e : APICameraUpdateEvent)</text>
     </group>
   </group>
   <group name="Fig15"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1104, 1136, 429, 69]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1176, 1136, 429, 69]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001879"
        fill="1"
        fillcolor="white"
@@ -7516,7 +7812,7 @@
     </private>
     
     <rectangle name="Fig15.0"
-      x="1104"
+      x="1176"
       y="1136"
       width="429"
       height="69"
@@ -7526,7 +7822,7 @@
       strokecolor="black"
     />
     <text name="Fig15.1"
-      x="1105"
+      x="1177"
       y="1137"
       width="427"
       height="22"
@@ -7542,7 +7838,7 @@
       justification="Center"
     >CircleAPIFormation</text>
     <group name="Fig15.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1105, 1137, 427, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1177, 1137, 427, 0]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001879"
          fill="0"
          fillcolor="white"
@@ -7554,7 +7850,7 @@
       </private>
       
       <rectangle name="Fig15.2.0"
-        x="1105"
+        x="1177"
         y="1137"
         width="427"
         height="0"
@@ -7565,7 +7861,7 @@
       />
     </group>
     <rectangle name="Fig15.3"
-      x="1104"
+      x="1176"
       y="1159"
       width="429"
       height="1"
@@ -7575,7 +7871,7 @@
       strokecolor="black"
     />
     <group name="Fig15.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1105, 1160, 427, 21]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1177, 1160, 427, 21]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001879"
          fill="0"
          fillcolor="white"
@@ -7586,7 +7882,7 @@
       </private>
       
       <rectangle name="Fig15.4.0"
-        x="1105"
+        x="1177"
         y="1160"
         width="427"
         height="21"
@@ -7597,7 +7893,7 @@
       />
     </group>
     <rectangle name="Fig15.5"
-      x="1104"
+      x="1176"
       y="1180"
       width="429"
       height="1"
@@ -7607,7 +7903,7 @@
       strokecolor="black"
     />
     <group name="Fig15.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1105, 1181, 427, 24]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1177, 1181, 427, 24]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001879"
          fill="0"
          fillcolor="white"
@@ -7618,7 +7914,7 @@
       </private>
       
       <rectangle name="Fig15.6.0"
-        x="1105"
+        x="1177"
         y="1181"
         width="427"
         height="24"
@@ -7628,7 +7924,7 @@
         strokecolor="black"
       />
       <text name="Fig15.6.1"
-        x="1105"
+        x="1177"
         y="1181"
         width="427"
         height="22"
@@ -7670,14 +7966,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1216"
+      <moveto x="1224"
               y="1136" />
-      <lineto x="1216"
-              y="1103" />
+      <lineto x="1224"
+              y="1111" />
     </path>
   </group>
   <group name="Fig17"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1400, 1216, 424, 72]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1408, 1216, 424, 72]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001882"
        fill="1"
        fillcolor="white"
@@ -7689,7 +7985,7 @@
     </private>
     
     <rectangle name="Fig17.0"
-      x="1400"
+      x="1408"
       y="1216"
       width="424"
       height="72"
@@ -7699,7 +7995,7 @@
       strokecolor="black"
     />
     <text name="Fig17.1"
-      x="1401"
+      x="1409"
       y="1217"
       width="422"
       height="22"
@@ -7715,7 +8011,7 @@
       justification="Center"
     >LineAPIFormation</text>
     <group name="Fig17.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1401, 1217, 418, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1409, 1217, 418, 0]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001882"
          fill="0"
          fillcolor="white"
@@ -7727,7 +8023,7 @@
       </private>
       
       <rectangle name="Fig17.2.0"
-        x="1401"
+        x="1409"
         y="1217"
         width="418"
         height="0"
@@ -7738,7 +8034,7 @@
       />
     </group>
     <rectangle name="Fig17.3"
-      x="1400"
+      x="1408"
       y="1239"
       width="424"
       height="1"
@@ -7748,7 +8044,7 @@
       strokecolor="black"
     />
     <group name="Fig17.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1401, 1240, 422, 21]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1409, 1240, 422, 21]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001882"
          fill="0"
          fillcolor="white"
@@ -7759,7 +8055,7 @@
       </private>
       
       <rectangle name="Fig17.4.0"
-        x="1401"
+        x="1409"
         y="1240"
         width="422"
         height="21"
@@ -7770,7 +8066,7 @@
       />
     </group>
     <rectangle name="Fig17.5"
-      x="1400"
+      x="1408"
       y="1261"
       width="424"
       height="1"
@@ -7780,7 +8076,7 @@
       strokecolor="black"
     />
     <group name="Fig17.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1401, 1262, 422, 24]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1409, 1262, 422, 24]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001882"
          fill="0"
          fillcolor="white"
@@ -7791,7 +8087,7 @@
       </private>
       
       <rectangle name="Fig17.6.0"
-        x="1401"
+        x="1409"
         y="1262"
         width="422"
         height="24"
@@ -7801,7 +8097,7 @@
         strokecolor="black"
       />
       <text name="Fig17.6.1"
-        x="1401"
+        x="1409"
         y="1262"
         width="422"
         height="22"
@@ -7843,10 +8139,10 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1608"
+      <moveto x="1616"
               y="1216" />
-      <lineto x="1608"
-              y="1103" />
+      <lineto x="1616"
+              y="1111" />
     </path>
   </group>
   <group name="Fig19"
@@ -7874,14 +8170,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="368"
+      <moveto x="376"
               y="164" />
       <lineto x="280"
               y="164" />
     </path>
   </group>
   <group name="Fig20"
-       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[880, 904, 239, 99]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
+       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[896, 1112, 239, 99]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018B3"
        fill="1"
        fillcolor="white"
@@ -7893,8 +8189,8 @@
     </private>
     
     <rectangle name="Fig20.0"
-      x="880"
-      y="904"
+      x="896"
+      y="1112"
       width="239"
       height="99"
       fill="1"
@@ -7903,8 +8199,8 @@
       strokecolor="black"
     />
     <text name="Fig20.1"
-      x="881"
-      y="905"
+      x="897"
+      y="1113"
       width="237"
       height="41"
       fill="0"
@@ -7919,7 +8215,7 @@
       justification="Center"
     >APIMessageListener</text>
     <group name="Fig20.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[881, 905, 237, 19]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[897, 1113, 237, 19]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018B3"
          fill="0"
          fillcolor="white"
@@ -7930,8 +8226,8 @@
       </private>
       
       <rectangle name="Fig20.2.0"
-        x="881"
-        y="905"
+        x="897"
+        y="1113"
         width="237"
         height="19"
         fill="0"
@@ -7940,8 +8236,8 @@
         strokecolor="black"
       />
       <text name="Fig20.2.1"
-        x="881"
-        y="905"
+        x="897"
+        y="1113"
         width="237"
         height="17"
         fill="0"
@@ -7957,8 +8253,8 @@
       >&lt;&lt;interface&gt;&gt;</text>
     </group>
     <rectangle name="Fig20.3"
-      x="880"
-      y="946"
+      x="896"
+      y="1154"
       width="239"
       height="1"
       fill="1"
@@ -7967,7 +8263,7 @@
       strokecolor="black"
     />
     <group name="Fig20.4"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[881, 947, 237, 56]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[897, 1155, 237, 56]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000018B3"
          fill="0"
          fillcolor="white"
@@ -7978,8 +8274,8 @@
       </private>
       
       <rectangle name="Fig20.4.0"
-        x="881"
-        y="947"
+        x="897"
+        y="1155"
         width="237"
         height="56"
         fill="0"
@@ -7988,8 +8284,8 @@
         strokecolor="black"
       />
       <text name="Fig20.4.1"
-        x="881"
-        y="947"
+        x="897"
+        y="1155"
         width="237"
         height="16"
         fill="0"
@@ -8004,8 +8300,8 @@
         justification="Left"
       >apiErrorMessage(error : char*)</text>
       <text name="Fig20.4.2"
-        x="881"
-        y="963"
+        x="897"
+        y="1171"
         width="237"
         height="16"
         fill="0"
@@ -8020,8 +8316,8 @@
         justification="Left"
       >apiWarningMessage(warning : char*)</text>
       <text name="Fig20.4.3"
-        x="881"
-        y="979"
+        x="897"
+        y="1187"
         width="237"
         height="22"
         fill="0"
@@ -8088,14 +8384,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1056"
-              y="815" />
-      <lineto x="1056"
-              y="904" />
+      <moveto x="1064"
+              y="847" />
+      <lineto x="1064"
+              y="1112" />
     </path>
   </group>
   <group name="Fig22"
-       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[424, 712, 135, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
+       description="org.argouml.uml.diagram.static_structure.ui.FigInterface[432, 712, 135, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;operationsVisible=true"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:000000000000195A"
        fill="1"
        fillcolor="white"
@@ -8107,7 +8403,7 @@
     </private>
     
     <rectangle name="Fig22.0"
-      x="424"
+      x="432"
       y="712"
       width="135"
       height="67"
@@ -8117,7 +8413,7 @@
       strokecolor="black"
     />
     <text name="Fig22.1"
-      x="425"
+      x="433"
       y="713"
       width="133"
       height="41"
@@ -8133,7 +8429,7 @@
       justification="Center"
     >APIImageListener</text>
     <group name="Fig22.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[425, 713, 133, 19]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[433, 713, 133, 19]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:000000000000195A"
          fill="0"
          fillcolor="white"
@@ -8144,7 +8440,7 @@
       </private>
       
       <rectangle name="Fig22.2.0"
-        x="425"
+        x="433"
         y="713"
         width="133"
         height="19"
@@ -8154,7 +8450,7 @@
         strokecolor="black"
       />
       <text name="Fig22.2.1"
-        x="425"
+        x="433"
         y="713"
         width="133"
         height="17"
@@ -8171,7 +8467,7 @@
       >&lt;&lt;interface&gt;&gt;</text>
     </group>
     <rectangle name="Fig22.3"
-      x="424"
+      x="432"
       y="754"
       width="135"
       height="1"
@@ -8181,7 +8477,7 @@
       strokecolor="black"
     />
     <group name="Fig22.4"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[425, 755, 133, 24]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[433, 755, 133, 24]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:000000000000195A"
          fill="0"
          fillcolor="white"
@@ -8192,7 +8488,7 @@
       </private>
       
       <rectangle name="Fig22.4.0"
-        x="425"
+        x="433"
         y="755"
         width="133"
         height="24"
@@ -8202,7 +8498,7 @@
         strokecolor="black"
       />
       <text name="Fig22.4.1"
-        x="425"
+        x="433"
         y="755"
         width="133"
         height="22"
@@ -8270,9 +8566,9 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="518"
-              y="655" />
-      <lineto x="518"
+      <moveto x="526"
+              y="671" />
+      <lineto x="526"
               y="712" />
     </path>
   </group>
@@ -8327,9 +8623,9 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="784"
-              y="655" />
-      <lineto x="784"
+      <moveto x="792"
+              y="671" />
+      <lineto x="792"
               y="728" />
     </path>
   </group>
@@ -8359,13 +8655,13 @@
       strokecolor="black"
     >
       <moveto x="584"
-              y="655" />
+              y="671" />
       <lineto x="584"
-              y="912" />
+              y="1032" />
     </path>
   </group>
   <group name="Fig26"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[400, 1088, 168, 59]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[408, 1176, 168, 59]pathVisible=false;stereotypeView=0;"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019A8"
        fill="1"
        fillcolor="white"
@@ -8377,8 +8673,8 @@
     </private>
     
     <rectangle name="Fig26.0"
-      x="400"
-      y="1088"
+      x="408"
+      y="1176"
       width="168"
       height="59"
       fill="0"
@@ -8393,18 +8689,18 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="400"
-              y="1088" />
-      <lineto x="557"
-              y="1088" />
-      <lineto x="567"
-              y="1098" />
-      <lineto x="567"
-              y="1146" />
-      <lineto x="400"
-              y="1146" />
-      <lineto x="400"
-              y="1088" />
+      <moveto x="408"
+              y="1176" />
+      <lineto x="565"
+              y="1176" />
+      <lineto x="575"
+              y="1186" />
+      <lineto x="575"
+              y="1234" />
+      <lineto x="408"
+              y="1234" />
+      <lineto x="408"
+              y="1176" />
     </path>
     <path name="Fig26.2"
       description="org.tigris.gef.presentation.FigPoly"
@@ -8413,17 +8709,17 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="557"
-              y="1088" />
-      <lineto x="567"
-              y="1098" />
-      <lineto x="557"
-              y="1098" />
-      <lineto x="557"
-              y="1088" />
+      <moveto x="565"
+              y="1176" />
+      <lineto x="575"
+              y="1186" />
+      <lineto x="565"
+              y="1186" />
+      <lineto x="565"
+              y="1176" />
     </path>
     <group name="Fig26.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[402, 1090, 154, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[410, 1178, 154, 0]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019A8"
          fill="0"
          fillcolor="white"
@@ -8435,8 +8731,8 @@
       </private>
       
       <rectangle name="Fig26.3.0"
-        x="402"
-        y="1090"
+        x="410"
+        y="1178"
         width="154"
         height="0"
         fill="0"
@@ -8446,8 +8742,8 @@
       />
     </group>
     <text name="Fig26.4"
-      x="402"
-      y="1090"
+      x="410"
+      y="1178"
       width="154"
       height="55"
       fill="0"
@@ -8481,14 +8777,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="464"
-              y="1088" />
-      <lineto x="464"
-              y="1031" />
+      <moveto x="472"
+              y="1176" />
+      <lineto x="472"
+              y="1151" />
     </path>
   </group>
   <group name="Fig28"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[648, 832, 331, 59]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[640, 936, 331, 59]pathVisible=false;stereotypeView=0;"
        href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019AA"
        fill="1"
        fillcolor="white"
@@ -8500,8 +8796,8 @@
     </private>
     
     <rectangle name="Fig28.0"
-      x="648"
-      y="832"
+      x="640"
+      y="936"
       width="331"
       height="59"
       fill="0"
@@ -8516,18 +8812,18 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="648"
-              y="832" />
-      <lineto x="968"
-              y="832" />
-      <lineto x="978"
-              y="842" />
-      <lineto x="978"
-              y="890" />
-      <lineto x="648"
-              y="890" />
-      <lineto x="648"
-              y="832" />
+      <moveto x="640"
+              y="936" />
+      <lineto x="960"
+              y="936" />
+      <lineto x="970"
+              y="946" />
+      <lineto x="970"
+              y="994" />
+      <lineto x="640"
+              y="994" />
+      <lineto x="640"
+              y="936" />
     </path>
     <path name="Fig28.2"
       description="org.tigris.gef.presentation.FigPoly"
@@ -8536,17 +8832,17 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="968"
-              y="832" />
-      <lineto x="978"
-              y="842" />
-      <lineto x="968"
-              y="842" />
-      <lineto x="968"
-              y="832" />
+      <moveto x="960"
+              y="936" />
+      <lineto x="970"
+              y="946" />
+      <lineto x="960"
+              y="946" />
+      <lineto x="960"
+              y="936" />
     </path>
     <group name="Fig28.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[650, 834, 317, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[642, 938, 317, 0]"
          href="-115-3-12--75-447502de:142e1a3761e:-8000:00000000000019AA"
          fill="0"
          fillcolor="white"
@@ -8558,8 +8854,8 @@
       </private>
       
       <rectangle name="Fig28.3.0"
-        x="650"
-        y="834"
+        x="642"
+        y="938"
         width="317"
         height="0"
         fill="0"
@@ -8569,8 +8865,8 @@
       />
     </group>
     <text name="Fig28.4"
-      x="650"
-      y="834"
+      x="642"
+      y="938"
       width="317"
       height="55"
       fill="0"
@@ -8604,14 +8900,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="750"
-              y="832" />
-      <lineto x="750"
+      <moveto x="758"
+              y="936" />
+      <lineto x="758"
               y="794" />
     </path>
   </group>
   <group name="Fig30"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[1368, 768, 299, 96]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[1408, 824, 299, 96]pathVisible=false;stereotypeView=0;"
        href="127-0-1-1-3ad50b68:142e8e3db5d:-8000:0000000000000D0B"
        fill="1"
        fillcolor="white"
@@ -8623,8 +8919,8 @@
     </private>
     
     <rectangle name="Fig30.0"
-      x="1368"
-      y="768"
+      x="1408"
+      y="824"
       width="299"
       height="96"
       fill="0"
@@ -8639,18 +8935,18 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1368"
-              y="768" />
-      <lineto x="1656"
-              y="768" />
-      <lineto x="1666"
-              y="778" />
-      <lineto x="1666"
-              y="863" />
-      <lineto x="1368"
-              y="863" />
-      <lineto x="1368"
-              y="768" />
+      <moveto x="1408"
+              y="824" />
+      <lineto x="1696"
+              y="824" />
+      <lineto x="1706"
+              y="834" />
+      <lineto x="1706"
+              y="919" />
+      <lineto x="1408"
+              y="919" />
+      <lineto x="1408"
+              y="824" />
     </path>
     <path name="Fig30.2"
       description="org.tigris.gef.presentation.FigPoly"
@@ -8659,17 +8955,17 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1656"
-              y="768" />
-      <lineto x="1666"
-              y="778" />
-      <lineto x="1656"
-              y="778" />
-      <lineto x="1656"
-              y="768" />
+      <moveto x="1696"
+              y="824" />
+      <lineto x="1706"
+              y="834" />
+      <lineto x="1696"
+              y="834" />
+      <lineto x="1696"
+              y="824" />
     </path>
     <group name="Fig30.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1370, 770, 285, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1410, 826, 285, 0]"
          href="127-0-1-1-3ad50b68:142e8e3db5d:-8000:0000000000000D0B"
          fill="0"
          fillcolor="white"
@@ -8681,8 +8977,8 @@
       </private>
       
       <rectangle name="Fig30.3.0"
-        x="1370"
-        y="770"
+        x="1410"
+        y="826"
         width="285"
         height="0"
         fill="0"
@@ -8692,8 +8988,8 @@
       />
     </group>
     <text name="Fig30.4"
-      x="1370"
-      y="770"
+      x="1410"
+      y="826"
       width="285"
       height="92"
       fill="0"
@@ -8731,10 +9027,10 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1408"
-              y="768" />
-      <lineto x="1408"
-              y="730" />
+      <moveto x="1520"
+              y="824" />
+      <lineto x="1520"
+              y="810" />
     </path>
   </group>
 </pgml>
