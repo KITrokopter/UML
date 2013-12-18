@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 13 13:24:26 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 18 20:52:07 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2737,7 +2737,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Operation xmi.id = '127-0-0-1--436d4c2d:142c7be7e5a:-8000:0000000000001441'
-                  name = 'getActualOrientation' visibility = 'public' isSpecification = 'false'
+                  name = 'getCurrentOrientation' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -2750,7 +2750,7 @@
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '127-0-0-1--436d4c2d:142c7be7e5a:-8000:000000000000143F'
-                  name = 'getActualPosition' visibility = 'public' isSpecification = 'false'
+                  name = 'getCurrentPosition' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -2763,7 +2763,7 @@
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '127-0-0-1--436d4c2d:142c7be7e5a:-8000:000000000000143A'
-                  name = 'getActualSpeed' visibility = 'public' isSpecification = 'false'
+                  name = 'getCurrentSpeed' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -2776,7 +2776,7 @@
                   </UML:BehavioralFeature.parameter>
                 </UML:Operation>
                 <UML:Operation xmi.id = '127-0-0-1--436d4c2d:142c7be7e5a:-8000:000000000000143C'
-                  name = 'getActualAcceleration' visibility = 'public' isSpecification = 'false'
+                  name = 'getCurrentAcceleration' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'>
                   <UML:BehavioralFeature.parameter>
@@ -2927,7 +2927,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001923'
-                  name = 'actualSpeed' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  name = 'currentSpeed' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
                   changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001924'>
@@ -2942,7 +2942,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001926'
-                  name = 'actualAcceleration' visibility = 'public' isSpecification = 'false'
+                  name = 'currentAcceleration' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001927'>
@@ -2957,7 +2957,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:0000000000001929'
-                  name = 'actualPosition' visibility = 'public' isSpecification = 'false'
+                  name = 'currentPosition' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000192A'>
@@ -2972,7 +2972,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000192C'
-                  name = 'actualOrientation' visibility = 'public' isSpecification = 'false'
+                  name = 'currentOrientation' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '-115-3-12--75-447502de:142e1a3761e:-8000:000000000000192D'>
@@ -5479,7 +5479,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >actualSpeed : Integer</text>
+      >currentSpeed : Integer</text>
       <text name="Fig3.4.6"
         x="1337"
         y="144"
@@ -5495,7 +5495,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >actualAcceleration : Integer</text>
+      >currentAcceleration : Integer</text>
       <text name="Fig3.4.7"
         x="1337"
         y="160"
@@ -5511,7 +5511,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >actualPosition : Vector</text>
+      >currentPosition : Vector</text>
       <text name="Fig3.4.8"
         x="1337"
         y="176"
@@ -5527,7 +5527,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >actualOrientation : Vector</text>
+      >currentOrientation : Vector</text>
       <text name="Fig3.4.9"
         x="1337"
         y="192"
@@ -5815,7 +5815,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getActualOrientation() : Vector</text>
+      >getCurrentOrientation() : Vector</text>
       <text name="Fig3.6.7"
         x="1337"
         y="456"
@@ -5831,7 +5831,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getActualPosition() : Vector</text>
+      >getCurrentPosition() : Vector</text>
       <text name="Fig3.6.8"
         x="1337"
         y="472"
@@ -5847,7 +5847,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getActualSpeed() : Vector</text>
+      >getCurrentSpeed() : Vector</text>
       <text name="Fig3.6.9"
         x="1337"
         y="488"
@@ -5863,7 +5863,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >getActualAcceleration() : Vector</text>
+      >getCurrentAcceleration() : Vector</text>
       <text name="Fig3.6.10"
         x="1337"
         y="504"
