@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Dec 19 12:48:51 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Dec 21 17:22:16 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -353,7 +353,7 @@
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--4ff9c06d:142e1de20a0:-8000:0000000000001526'
-                  name = 'magnometerData' visibility = 'public' isSpecification = 'false'
+                  name = 'magnetometerData' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
                   <UML:StructuralFeature.multiplicity>
                     <UML:Multiplicity xmi.id = '127-0-0-1--4ff9c06d:142e1de20a0:-8000:0000000000001527'>
@@ -474,7 +474,7 @@
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'/>
                 <UML:Operation xmi.id = '127-0-0-1-1e65e3f2:143069b429c:-8000:00000000000027A6'
-                  name = 'receiveMagnometerDataCallback' visibility = 'public' isSpecification = 'false'
+                  name = 'receiveMagnetometerDataCallback' visibility = 'public' isSpecification = 'false'
                   ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
                   isLeaf = 'false' isAbstract = 'false'/>
                 <UML:Operation xmi.id = '127-0-0-1-1e65e3f2:143069b429c:-8000:00000000000027A8'
@@ -815,7 +815,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >magnometerData : Vector</text>
+      >magnetometerData : Vector</text>
       <text name="Fig1.4.3"
         x="313"
         y="224"
@@ -1039,7 +1039,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >receiveMagnometerDataCallback()</text>
+      >receiveMagnetometerDataCallback()</text>
       <text name="Fig1.6.9"
         x="313"
         y="424"
